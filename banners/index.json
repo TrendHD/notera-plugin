@@ -1,0 +1,31 @@
+{
+  "sets": [
+    {
+      "id": "vanilla",
+      "name": "Vanilla Default",
+      "version": "1.0",
+      "author": "Notera",
+      "description": "Minimal dark banners",
+      "hasPreview": true,
+      "hasZip": true
+    },
+    {
+      "id": "abstractions",
+      "name": "abstractions",
+      "version": "1.2",
+      "author": "Notera",
+      "description": "Abstractions test banners",
+      "hasPreview": true,
+      "hasZip": true
+    },
+    {
+      "id": "vanilla_notera",
+      "name": "Vanilla Notera",
+      "version": "1.8",
+      "author": "Notera",
+      "description": "Classic banners assembled with love",
+      "hasPreview": true,
+      "hasZip": true
+    }
+  ]
+}
