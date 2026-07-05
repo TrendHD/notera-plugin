@@ -253,7 +253,6 @@ span.notera-subtab-icon {
 .notera-cleanup-results p,
 p.notera-analytics-count,
 .notera-duplicate-group-title,
-.notera-active-set,
 .notera-backups-list p {
     color: var(--text-muted);
     font-size: calc(var(--font-ui-small) + 1px);
@@ -262,10 +261,6 @@ p.notera-analytics-count,
 	margin-bottom: var(--size-4-2);
 	border-radius: var(--radius-l);
     text-align: center;
-}
-
-.notera-active-set {
-    margin: var(--size-4-2) 0;
 }
 
 .notera-duplicate-group .notera-duplicate-group-title {
@@ -561,7 +556,7 @@ body.notera-img-hover :is(.markdown-source-view, .markdown-preview-view, .markdo
 }
 
 .community-item .notera-badge-installed {
-	color: color-mix(in srgb, var(--text-muted) 50%, transparent);
+	color: var(--text-faint);
 }
 
 .notera-banner-sets .setting-item { 
@@ -780,6 +775,27 @@ body.notera-img-hover :is(.markdown-source-view, .markdown-preview-view, .markdo
 
 .notera-customization-header h3 {
 	margin: 0;
+}
+
+.notera-banner-style-section details summary {
+	background-color: var(--setting-items-background);
+	padding: var(--size-4-2) 0;
+	margin-bottom: var(--size-4-2);
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	border-radius: var(--radius-l);
+	transition: var(--trans-normal);
+	text-align: center;
+	cursor: pointer;
+}
+
+.notera-banner-style-section details summary:hover,
+.notera-banner-style-section details[open] summary {
+	background-color: var(--background-modifier-hover);
+}
+
+.notera-banner-style-section details[open] summary { 
+	color: var(--text-faint);
 }
 
 .notera-banner-style-section + .notera-customization-header {
@@ -2252,6 +2268,30 @@ img.notera-search-result-thumb,
 .notera-onb-nav .clickable-icon:disabled { 
 	opacity: 0;
     cursor: default; 
+}
+
+.notera-social-links {
+	--icon-size: var(--icon-xl);
+	--background-modifier-hover: transparent;
+	--icon-color-hover: var(--notera);
+	--icon-color: var(--text-faint);
+	--icon-opacity: 0.6;
+	display: flex;
+	justify-content: center;
+	gap: var(--size-4-4);
+}
+
+.notera-settings .notera-social-links {
+	--icon-opacity: 0.4;
+	--icon-size: calc(var(--icon-xl) - 4px);
+	margin-top: var(--size-4-3);
+}
+
+.notera-social-icon svg {
+	width: var(--icon-size);
+	height: var(--icon-size);
+	fill: currentColor;
+	cursor: pointer;
 }
 
 .notera-onb-fonts {

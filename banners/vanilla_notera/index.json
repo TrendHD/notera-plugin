@@ -1,7 +1,8 @@
 {
   "id": "vanilla_notera",
   "name": "Vanilla Notera",
-  "version": "1.8",
+  "version": "1.9",
   "author": "Notera",
-  "description": "Classic banners assembled with love"
+  "description": "Classic banners assembled with love",
+  "bannerCount": 8
 }
